@@ -16,6 +16,24 @@
 .csslider > input {
   display: none;
 }
+.csslider > input:nth-of-type(16):checked ~ ul li:first-of-type {
+	margin-left: -1500%;
+}
+.csslider > input:nth-of-type(15):checked ~ ul li:first-of-type {
+	margin-left: -1400%;
+}
+.csslider > input:nth-of-type(14):checked ~ ul li:first-of-type {
+	margin-left: -1300%;
+}
+.csslider > input:nth-of-type(13):checked ~ ul li:first-of-type {
+	margin-left: -1200%;
+}
+.csslider > input:nth-of-type(12):checked ~ ul li:first-of-type {
+	margin-left: -1100%;
+}
+.csslider > input:nth-of-type(11):checked ~ ul li:first-of-type {
+	margin-left: -1000%;
+}
 .csslider > input:nth-of-type(10):checked ~ ul li:first-of-type {
   margin-left: -900%;
 }
@@ -153,7 +171,12 @@
 .csslider > input:nth-of-type(8):checked ~ .navigation label:nth-of-type(8):after,
 .csslider > input:nth-of-type(9):checked ~ .navigation label:nth-of-type(9):after,
 .csslider > input:nth-of-type(10):checked ~ .navigation label:nth-of-type(10):after,
-.csslider > input:nth-of-type(11):checked ~ .navigation label:nth-of-type(11):after {
+.csslider > input:nth-of-type(11):checked ~ .navigation label:nth-of-type(11):after,
+.csslider > input:nth-of-type(12):checked ~ .navigation label:nth-of-type(12):after,
+.csslider > input:nth-of-type(13):checked ~ .navigation label:nth-of-type(13):after,
+.csslider > input:nth-of-type(14):checked ~ .navigation label:nth-of-type(14):after,
+.csslider > input:nth-of-type(15):checked ~ .navigation label:nth-of-type(15):after,
+.csslider > input:nth-of-type(16):checked ~ .navigation label:nth-of-type(16):after {
   opacity: 1;
 }
 .csslider > .arrows {
@@ -203,7 +226,12 @@
 .csslider > input:nth-of-type(8):checked ~ .arrows > label:nth-of-type(7),
 .csslider > input:nth-of-type(9):checked ~ .arrows > label:nth-of-type(8),
 .csslider > input:nth-of-type(10):checked ~ .arrows > label:nth-of-type(9),
-.csslider > input:nth-of-type(11):checked ~ .arrows > label:nth-of-type(10) {
+.csslider > input:nth-of-type(11):checked ~ .arrows > label:nth-of-type(10),
+.csslider > input:nth-of-type(12):checked ~ .arrows > label:nth-of-type(11),
+.csslider > input:nth-of-type(13):checked ~ .arrows > label:nth-of-type(12),
+.csslider > input:nth-of-type(14):checked ~ .arrows > label:nth-of-type(13),
+.csslider > input:nth-of-type(15):checked ~ .arrows > label:nth-of-type(14),
+.csslider > input:nth-of-type(16):checked ~ .arrows > label:nth-of-type(15) {
   display: block;
   left: 0;
   right: auto;
@@ -224,7 +252,11 @@
 .csslider > input:nth-of-type(8):checked ~ .arrows > label:nth-of-type(9),
 .csslider > input:nth-of-type(9):checked ~ .arrows > label:nth-of-type(10),
 .csslider > input:nth-of-type(10):checked ~ .arrows > label:nth-of-type(11),
-.csslider > input:nth-of-type(11):checked ~ .arrows > label:nth-of-type(12) {
+.csslider > input:nth-of-type(11):checked ~ .arrows > label:nth-of-type(12),
+.csslider > input:nth-of-type(12):checked ~ .arrows > label:nth-of-type(13),
+.csslider > input:nth-of-type(13):checked ~ .arrows > label:nth-of-type(14),
+.csslider > input:nth-of-type(14):checked ~ .arrows > label:nth-of-type(15),
+.csslider > input:nth-of-type(15):checked ~ .arrows > label:nth-of-type(16) {
   display: block;
   right: 0;
   left: auto;
@@ -281,9 +313,8 @@ body {
   text-align: center;
   font: 400 100% 'Raleway', 'Lato';
   background-color: #282828;
+  background: url('https://www.cousinsmainelobster.com/wp-content/uploads/2018/11/MemphisCover-copy.jpeg') center center/cover no-repeat fixed;
   color: #CCC;
-}
-body {
   padding-bottom: 60px;
 }
 h1 {
@@ -307,4 +338,8 @@ h2 {
   text-align: justify;
   line-height: 140%;
   font-size: 120%;
+}
+li > img {
+	max-width: 100%;
+	height: auto;
 }
